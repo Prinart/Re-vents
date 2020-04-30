@@ -5,12 +5,15 @@ import * as serviceWorker from "./serviceWorker";
 
 import "semantic-ui-css/semantic.min.css";
 import "./index.css";
+import { BrowserRouter } from "react-router-dom";
 const rootEl = document.getElementById("root");
 
 let render = () => {
   ReactDOM.render(
     <React.StrictMode>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </React.StrictMode>,
     rootEl
   );
